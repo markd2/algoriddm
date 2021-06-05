@@ -13,6 +13,10 @@
 		7D2F304A266BF7E400B4AF5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F3049266BF7E400B4AF5D /* Preview Assets.xcassets */; };
 		7D2F304D266BF7E400B4AF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F304B266BF7E400B4AF5D /* Main.storyboard */; };
 		7D2F3059266C02F800B4AF5D /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 7D2F3058266C02F800B4AF5D /* Algorithms */; };
+		7D2F305E266C14DB00B4AF5D /* aoc1-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F305B266C14DB00B4AF5D /* aoc1-data.txt */; };
+		7D2F305F266C14DB00B4AF5D /* aoc1-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F305C266C14DB00B4AF5D /* aoc1-test.txt */; };
+		7D2F3060266C14DB00B4AF5D /* aoc1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F305D266C14DB00B4AF5D /* aoc1.swift */; };
+		7D2F3063266C161F00B4AF5D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F3062266C161F00B4AF5D /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7D2F304C266BF7E400B4AF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D2F304E266BF7E400B4AF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D2F304F266BF7E400B4AF5D /* Algoriddm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Algoriddm.entitlements; sourceTree = "<group>"; };
+		7D2F305B266C14DB00B4AF5D /* aoc1-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc1-data.txt"; sourceTree = "<group>"; };
+		7D2F305C266C14DB00B4AF5D /* aoc1-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc1-test.txt"; sourceTree = "<group>"; };
+		7D2F305D266C14DB00B4AF5D /* aoc1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aoc1.swift; sourceTree = "<group>"; };
+		7D2F3062266C161F00B4AF5D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +70,12 @@
 				7D2F3046266BF7E400B4AF5D /* Assets.xcassets */,
 				7D2F304B266BF7E400B4AF5D /* Main.storyboard */,
 				7D2F304E266BF7E400B4AF5D /* Info.plist */,
+				7D2F305B266C14DB00B4AF5D /* aoc1-data.txt */,
+				7D2F305C266C14DB00B4AF5D /* aoc1-test.txt */,
+				7D2F305D266C14DB00B4AF5D /* aoc1.swift */,
 				7D2F304F266BF7E400B4AF5D /* Algoriddm.entitlements */,
 				7D2F3048266BF7E400B4AF5D /* Preview Content */,
+				7D2F3062266C161F00B4AF5D /* String+Extensions.swift */,
 			);
 			path = Algoriddm;
 			sourceTree = "<group>";
@@ -141,6 +153,8 @@
 			files = (
 				7D2F304D266BF7E400B4AF5D /* Main.storyboard in Resources */,
 				7D2F304A266BF7E400B4AF5D /* Preview Assets.xcassets in Resources */,
+				7D2F305F266C14DB00B4AF5D /* aoc1-test.txt in Resources */,
+				7D2F305E266C14DB00B4AF5D /* aoc1-data.txt in Resources */,
 				7D2F3047266BF7E400B4AF5D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2F3063266C161F00B4AF5D /* String+Extensions.swift in Sources */,
 				7D2F3045266BF7E100B4AF5D /* ContentView.swift in Sources */,
 				7D2F3043266BF7E100B4AF5D /* AppDelegate.swift in Sources */,
+				7D2F3060266C14DB00B4AF5D /* aoc1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

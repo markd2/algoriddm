@@ -10,6 +10,7 @@ struct ContentView: View {
             }
             Button("AoC ") {
                 print("florf")
+                aoc1_1()
             }
         }
     }

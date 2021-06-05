@@ -1,16 +1,14 @@
-//
-//  ContentView.swift
-//  Algoriddm
-//
-//  Created by markd on 6/5/21.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("Greeble Snorf")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+        List {
+            Button("AoC ") {
+                print("florf")
+            }
+        }
     }
 }
 

@@ -1,2 +1,5 @@
 # algoriddm
-Playing with Swift algorithms and collections
+
+Playing with Swift algorithms and collections.
+
+

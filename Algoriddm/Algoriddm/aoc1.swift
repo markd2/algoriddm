@@ -4,9 +4,12 @@ import Foundation
 // find two entries that sum to 2020 and then multiply them together
 
 func loadStuffs(_ filename: String) -> [Int] {
-    let path = Bundle.main.url(forResource: filename.deletingPathExtension,
+    let url = Bundle.main.url(forResource: filename.deletingPathExtension,
                                withExtension: filename.pathExtension)!
-    return []
+    let stuff = try! String(contentsOf: url, encoding: .utf8)
+        .split(separator: "\n")
+        .compactMap { Int($0) }
+    return stuff
 } // loadStuffs
 
 

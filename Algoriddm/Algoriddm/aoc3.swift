@@ -34,13 +34,13 @@ func traverseStuffCountingTrees(_ stuff: [String],
 
     var horizontalPosition = 0
 
-    for index in stride(from: 1, to: stuff.count, by: deltaV) {
+    for index in stride(from: deltaV, to: stuff.count, by: deltaV) {
         let line = stuff[index]
 
         horizontalPosition += deltaH
         let here = line.intDig(horizontalPosition % width)
 
-        print("looking at line \(index)  hpos \(horizontalPosition)  mod \(horizontalPosition % width) got \(here)")
+        // print("looking at line \(index)  hpos \(horizontalPosition)  mod \(horizontalPosition % width) got \(here)")
 
         if here == "#" {
             treeCount += 1

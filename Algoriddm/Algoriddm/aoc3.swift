@@ -58,5 +58,20 @@ func aoc3_1() {
 }
 
 func aoc3_2() {
-    let stuff = loadStuffs("aoc3-test.txt")
+    let stuff = loadStuffs("aoc3-data.txt")
+
+    let slopes: [(right: Int, down: Int)] = [
+      (1, 1), (3, 1), (5, 1), (7, 1), (1, 2)
+    ]
+    
+    var runningProduct = 1
+
+    slopes.forEach { slope in
+        let treeCount = traverseStuffCountingTrees(stuff, 
+                                                   deltaH: slope.right, deltaV: slope.down)
+        runningProduct *= treeCount
+    }
+
+    print("got \(runningProduct)")
+
 }

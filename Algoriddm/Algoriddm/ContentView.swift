@@ -8,12 +8,12 @@ struct ContentView: View {
             Button("Partition") {
                 partitionEvensLast()
             }
-            Button("AoC ") {
+            Button("AoC") {
                 print("florf")
                 // aoc1_1()
                 // aoc1_2()
-                 aoc2_1()
-                // aoc1_2()
+                // aoc2_1()
+                aoc2_2()
             }
         }
     }

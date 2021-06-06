@@ -17,6 +17,9 @@
 		7D2F305F266C14DB00B4AF5D /* aoc1-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F305C266C14DB00B4AF5D /* aoc1-test.txt */; };
 		7D2F3060266C14DB00B4AF5D /* aoc1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F305D266C14DB00B4AF5D /* aoc1.swift */; };
 		7D2F3063266C161F00B4AF5D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F3062266C161F00B4AF5D /* String+Extensions.swift */; };
+		7D7BB682266C4E5F00EE1BBB /* aoc2-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB67F266C4E5F00EE1BBB /* aoc2-data.txt */; };
+		7D7BB683266C4E5F00EE1BBB /* aoc2-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB680266C4E5F00EE1BBB /* aoc2-test.txt */; };
+		7D7BB684266C4E5F00EE1BBB /* aoc2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BB681266C4E5F00EE1BBB /* aoc2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,10 @@
 		7D2F305C266C14DB00B4AF5D /* aoc1-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc1-test.txt"; sourceTree = "<group>"; };
 		7D2F305D266C14DB00B4AF5D /* aoc1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aoc1.swift; sourceTree = "<group>"; };
 		7D2F3062266C161F00B4AF5D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		7D2F3068266C2A4E00B4AF5D /* PlaygroundOhPleaseWork.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = PlaygroundOhPleaseWork.playground; path = "../../../Library/Autosave Information/PlaygroundOhPleaseWork.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7D7BB67F266C4E5F00EE1BBB /* aoc2-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc2-data.txt"; sourceTree = "<group>"; };
+		7D7BB680266C4E5F00EE1BBB /* aoc2-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc2-test.txt"; sourceTree = "<group>"; };
+		7D7BB681266C4E5F00EE1BBB /* aoc2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aoc2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				7D2F3041266BF7E100B4AF5D /* Algoriddm */,
+				7D2F3068266C2A4E00B4AF5D /* PlaygroundOhPleaseWork.playground */,
 				7D2F3040266BF7E100B4AF5D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +81,9 @@
 				7D2F305B266C14DB00B4AF5D /* aoc1-data.txt */,
 				7D2F305C266C14DB00B4AF5D /* aoc1-test.txt */,
 				7D2F305D266C14DB00B4AF5D /* aoc1.swift */,
+				7D7BB67F266C4E5F00EE1BBB /* aoc2-data.txt */,
+				7D7BB680266C4E5F00EE1BBB /* aoc2-test.txt */,
+				7D7BB681266C4E5F00EE1BBB /* aoc2.swift */,
 				7D2F304F266BF7E400B4AF5D /* Algoriddm.entitlements */,
 				7D2F3048266BF7E400B4AF5D /* Preview Content */,
 				7D2F3062266C161F00B4AF5D /* String+Extensions.swift */,
@@ -153,9 +164,11 @@
 			files = (
 				7D2F304D266BF7E400B4AF5D /* Main.storyboard in Resources */,
 				7D2F304A266BF7E400B4AF5D /* Preview Assets.xcassets in Resources */,
+				7D7BB683266C4E5F00EE1BBB /* aoc2-test.txt in Resources */,
 				7D2F305F266C14DB00B4AF5D /* aoc1-test.txt in Resources */,
 				7D2F305E266C14DB00B4AF5D /* aoc1-data.txt in Resources */,
 				7D2F3047266BF7E400B4AF5D /* Assets.xcassets in Resources */,
+				7D7BB682266C4E5F00EE1BBB /* aoc2-data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D2F3063266C161F00B4AF5D /* String+Extensions.swift in Sources */,
+				7D7BB684266C4E5F00EE1BBB /* aoc2.swift in Sources */,
 				7D2F3045266BF7E100B4AF5D /* ContentView.swift in Sources */,
 				7D2F3043266BF7E100B4AF5D /* AppDelegate.swift in Sources */,
 				7D2F3060266C14DB00B4AF5D /* aoc1.swift in Sources */,

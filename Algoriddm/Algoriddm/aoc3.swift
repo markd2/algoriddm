@@ -27,8 +27,22 @@ private func loadStuffs(_ filename: String) -> [String] {
 
 
 func aoc3_1() {
-    let stuff = loadStuffs("aoc3-test.txt")
-    print(stuff)
+    let stuff = loadStuffs("aoc3-data.txt")
+    var treeCount = 0
+    var horizontalPosition = 0
+
+    // assumes uniform width of lines
+    let width = stuff[0].count
+
+    stuff.dropFirst().forEach { line in
+        // vertical change is implicit
+        horizontalPosition += 3
+        let here = line.intDig(horizontalPosition % width)
+        if here == "#" {
+            treeCount += 1
+        }
+    }
+    print("SUCCESS \(treeCount)")
 }
 
 func aoc3_2() {

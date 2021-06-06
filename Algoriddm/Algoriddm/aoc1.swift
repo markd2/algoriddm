@@ -3,7 +3,7 @@ import Algorithms
 
 // https://adventofcode.com/2020/day/1
 
-func loadStuffs(_ filename: String) -> [Int] {
+private func loadStuffs(_ filename: String) -> [Int] {
     let url = Bundle.main.url(forResource: filename.deletingPathExtension,
                                withExtension: filename.pathExtension)!
     let stuff = try! String(contentsOf: url, encoding: .utf8)

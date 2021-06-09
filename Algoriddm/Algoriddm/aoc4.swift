@@ -33,10 +33,77 @@ struct Passport {
           "ecl",
           "pid"
         ]
-        // "cid" is optional"
+        // "cid" is optional
         var count = 0
         requiredFields.forEach { field in
             if let _ = fields[field] {
+                count += 1
+            }
+        }
+        return count >= 7
+    }
+
+    var isValid2: Bool {
+        typealias Validator = (String) -> Bool
+        let requiredFields: [String : Validator] = [
+          "byr" : { s in
+              if let birthYear = Int(s) {
+                  if birthYear >= 1920 && birthYear <= 2002 { return true }
+              }
+              return false
+          },
+          "iyr" : { s in
+              if let issueYear = Int(s) {
+                  if issueYear >= 2010 && issueYear <= 2020 { return true }
+              }
+              return false
+          },
+          "eyr" : { s in
+              if let expirationYear = Int(s) {
+                  if expirationYear >= 2020 && expirationYear <= 2030 { return true }
+              }
+              return false
+          },
+          "hgt" : { s in
+              guard let height = Int(s.dropLast(2)) else { return false }
+              let trailing = s.suffix(2)
+              if trailing == "cm" {
+                  if height >= 150 && height <= 193 { return true }
+              } else if trailing == "in" {
+                  if height >= 59 && height <= 76 { return true }
+              }
+              return false
+          },
+          "hcl" : { s in
+              guard s.prefix(1) == "#" else { return false }
+              let hairColor = s.dropFirst(1)
+              guard hairColor.count == 6 else { return false }
+              if let _ = Int(hairColor, radix: 16) {
+                  return true
+              }
+              return false
+          },
+          "ecl" : { s in // eye color
+              return [
+                "amb",
+                "blu",
+                "brn",
+                "gry",
+                "grn",
+                "hzl",
+                "oth"].contains(s)
+          },
+          "pid" : { s in
+              guard s.count == 9 else { return false }
+              return CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: s))
+          }
+        ]
+
+        // "cid" is optional
+        var count = 0
+
+        requiredFields.forEach { (field, validator) in
+            if validator(fields[field] ?? "") {
                 count += 1
             }
         }
@@ -81,5 +148,9 @@ func aoc4_1() {
 
 
 func aoc4_2() {
-    let stuff = loadStuffs("aoc4-test.txt")
+    let passports = loadStuffs("aoc4-data.txt")
+
+    let valid = passports.filter { $0.isValid2 }
+
+    print("got \(passports.count), valid \(valid.count)")
 }

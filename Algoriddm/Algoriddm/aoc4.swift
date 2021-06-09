@@ -72,7 +72,7 @@ private func loadStuffs(_ filename: String) -> [Passport] {
 
 
 func aoc4_1() {
-    let passports = loadStuffs("aoc4-test.txt").dropLast() // don't include trailing newline
+    let passports = loadStuffs("aoc4-data.txt").dropLast() // don't include trailing newline
 
     let valid = passports.filter { $0.isValid }
 

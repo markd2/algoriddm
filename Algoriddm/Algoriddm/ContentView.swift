@@ -17,7 +17,9 @@ struct ContentView: View {
                 // aoc3_1()
                 // aoc3_2()
                 // aoc4_1()
-                aoc4_2()
+                // aoc4_2()
+                aoc5_1()
+                // aoc5_2()
             }
         }
     }

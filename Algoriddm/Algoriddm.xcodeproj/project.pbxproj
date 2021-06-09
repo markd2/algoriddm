@@ -26,6 +26,9 @@
 		7D7BB691266CFC6700EE1BBB /* aoc4-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB68E266CFC6700EE1BBB /* aoc4-data.txt */; };
 		7D7BB692266CFC6700EE1BBB /* aoc4-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB68F266CFC6700EE1BBB /* aoc4-test.txt */; };
 		7D7BB696266CFCA000EE1BBB /* aoc4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BB695266CFCA000EE1BBB /* aoc4.swift */; };
+		7D7BB69B267050F300EE1BBB /* aoc5-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB698267050F300EE1BBB /* aoc5-data.txt */; };
+		7D7BB69C267050F300EE1BBB /* aoc5-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB699267050F300EE1BBB /* aoc5-test.txt */; };
+		7D7BB69D267050F300EE1BBB /* aoc5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BB69A267050F300EE1BBB /* aoc5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		7D7BB68E266CFC6700EE1BBB /* aoc4-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc4-data.txt"; sourceTree = "<group>"; };
 		7D7BB68F266CFC6700EE1BBB /* aoc4-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc4-test.txt"; sourceTree = "<group>"; };
 		7D7BB695266CFCA000EE1BBB /* aoc4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aoc4.swift; sourceTree = "<group>"; };
+		7D7BB698267050F300EE1BBB /* aoc5-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc5-data.txt"; sourceTree = "<group>"; };
+		7D7BB699267050F300EE1BBB /* aoc5-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc5-test.txt"; sourceTree = "<group>"; };
+		7D7BB69A267050F300EE1BBB /* aoc5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aoc5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				7D7BB68E266CFC6700EE1BBB /* aoc4-data.txt */,
 				7D7BB68F266CFC6700EE1BBB /* aoc4-test.txt */,
 				7D7BB695266CFCA000EE1BBB /* aoc4.swift */,
+				7D7BB698267050F300EE1BBB /* aoc5-data.txt */,
+				7D7BB699267050F300EE1BBB /* aoc5-test.txt */,
+				7D7BB69A267050F300EE1BBB /* aoc5.swift */,
 				7D2F304F266BF7E400B4AF5D /* Algoriddm.entitlements */,
 				7D2F3048266BF7E400B4AF5D /* Preview Content */,
 				7D2F3062266C161F00B4AF5D /* String+Extensions.swift */,
@@ -182,11 +191,13 @@
 			files = (
 				7D7BB689266CED0F00EE1BBB /* aoc3-data.txt in Resources */,
 				7D7BB692266CFC6700EE1BBB /* aoc4-test.txt in Resources */,
+				7D7BB69B267050F300EE1BBB /* aoc5-data.txt in Resources */,
 				7D2F304D266BF7E400B4AF5D /* Main.storyboard in Resources */,
 				7D7BB68A266CED0F00EE1BBB /* aoc3-test.txt in Resources */,
 				7D7BB691266CFC6700EE1BBB /* aoc4-data.txt in Resources */,
 				7D2F304A266BF7E400B4AF5D /* Preview Assets.xcassets in Resources */,
 				7D7BB683266C4E5F00EE1BBB /* aoc2-test.txt in Resources */,
+				7D7BB69C267050F300EE1BBB /* aoc5-test.txt in Resources */,
 				7D2F305F266C14DB00B4AF5D /* aoc1-test.txt in Resources */,
 				7D2F305E266C14DB00B4AF5D /* aoc1-data.txt in Resources */,
 				7D2F3047266BF7E400B4AF5D /* Assets.xcassets in Resources */,
@@ -206,6 +217,7 @@
 				7D2F3045266BF7E100B4AF5D /* ContentView.swift in Sources */,
 				7D2F3043266BF7E100B4AF5D /* AppDelegate.swift in Sources */,
 				7D7BB696266CFCA000EE1BBB /* aoc4.swift in Sources */,
+				7D7BB69D267050F300EE1BBB /* aoc5.swift in Sources */,
 				7D2F3060266C14DB00B4AF5D /* aoc1.swift in Sources */,
 				7D7BB68B266CED0F00EE1BBB /* aoc3.swift in Sources */,
 			);

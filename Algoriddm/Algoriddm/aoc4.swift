@@ -24,7 +24,23 @@ struct Passport {
     }
 
     var isValid: Bool {
-        return true
+        let requiredFields = [
+          "byr",
+          "iyr",
+          "eyr",
+          "hgt",
+          "hcl",
+          "ecl",
+          "pid"
+        ]
+        // "cid" is optional"
+        var count = 0
+        requiredFields.forEach { field in
+            if let _ = fields[field] {
+                count += 1
+            }
+        }
+        return count >= 7
     }
 }
 
@@ -58,7 +74,9 @@ private func loadStuffs(_ filename: String) -> [Passport] {
 func aoc4_1() {
     let passports = loadStuffs("aoc4-test.txt").dropLast() // don't include trailing newline
 
-    print("got \(passports.count)")
+    let valid = passports.filter { $0.isValid }
+
+    print("got \(passports.count), valid \(valid.count)")
 }
 
 

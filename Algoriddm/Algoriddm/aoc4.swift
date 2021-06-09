@@ -18,7 +18,9 @@ import Foundation
 struct Passport {
     var fields: [String: String] = [:]
 
-    func accumulate(_ line: String) {
+    mutating func accumulate(_ line: String) {
+        let chunks = line.split(separator: ":")
+        fields[String(chunks[0])] = String(chunks[1])
     }
 
     var isValid: Bool {
@@ -27,23 +29,20 @@ struct Passport {
 }
 
 
-private func loadStuffs(_ filename: String) -> [String] {
+private func loadStuffs(_ filename: String) -> [Passport] {
     let url = Bundle.main.url(forResource: filename.deletingPathExtension,
                                withExtension: filename.pathExtension)!
     let stuff = try! String(contentsOf: url, encoding: .utf8)
       .split(separator: "\n", omittingEmptySubsequences: false)
       .compactMap { String($0) }
-    return stuff
-} // loadStuffs
-
-
-func aoc4_1() {
-    let stuff = loadStuffs("aoc4-test.txt").dropLast() // don't include trailing newline
 
     var current = Passport()
     var passports: [Passport] = []
 
     stuff.forEach { line in
+        line.split(separator: " ").forEach() { field in
+            current.accumulate(String(field))
+        }
         if line.isEmpty {
             passports.append(current)
             current = Passport()
@@ -51,6 +50,13 @@ func aoc4_1() {
     }
 
     passports.append(current)
+
+    return passports
+} // loadStuffs
+
+
+func aoc4_1() {
+    let passports = loadStuffs("aoc4-test.txt").dropLast() // don't include trailing newline
 
     print("got \(passports.count)")
 }

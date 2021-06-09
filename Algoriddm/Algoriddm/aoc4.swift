@@ -31,15 +31,28 @@ private func loadStuffs(_ filename: String) -> [String] {
     let url = Bundle.main.url(forResource: filename.deletingPathExtension,
                                withExtension: filename.pathExtension)!
     let stuff = try! String(contentsOf: url, encoding: .utf8)
-      .split(separator: "\n")
+      .split(separator: "\n", omittingEmptySubsequences: false)
       .compactMap { String($0) }
     return stuff
 } // loadStuffs
 
 
 func aoc4_1() {
-    let stuff = loadStuffs("aoc4-test.txt")
-    print("SNORGLE")
+    let stuff = loadStuffs("aoc4-test.txt").dropLast() // don't include trailing newline
+
+    var current = Passport()
+    var passports: [Passport] = []
+
+    stuff.forEach { line in
+        if line.isEmpty {
+            passports.append(current)
+            current = Passport()
+        }
+    }
+
+    passports.append(current)
+
+    print("got \(passports.count)")
 }
 
 

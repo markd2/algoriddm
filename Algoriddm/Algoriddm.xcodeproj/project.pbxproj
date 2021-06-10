@@ -13,6 +13,22 @@
 		7D2F304A266BF7E400B4AF5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F3049266BF7E400B4AF5D /* Preview Assets.xcassets */; };
 		7D2F304D266BF7E400B4AF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F304B266BF7E400B4AF5D /* Main.storyboard */; };
 		7D2F3059266C02F800B4AF5D /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 7D2F3058266C02F800B4AF5D /* Algorithms */; };
+		7D2F305E266C14DB00B4AF5D /* aoc1-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F305B266C14DB00B4AF5D /* aoc1-data.txt */; };
+		7D2F305F266C14DB00B4AF5D /* aoc1-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D2F305C266C14DB00B4AF5D /* aoc1-test.txt */; };
+		7D2F3060266C14DB00B4AF5D /* aoc1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F305D266C14DB00B4AF5D /* aoc1.swift */; };
+		7D2F3063266C161F00B4AF5D /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F3062266C161F00B4AF5D /* String+Extensions.swift */; };
+		7D7BB682266C4E5F00EE1BBB /* aoc2-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB67F266C4E5F00EE1BBB /* aoc2-data.txt */; };
+		7D7BB683266C4E5F00EE1BBB /* aoc2-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB680266C4E5F00EE1BBB /* aoc2-test.txt */; };
+		7D7BB684266C4E5F00EE1BBB /* aoc2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BB681266C4E5F00EE1BBB /* aoc2.swift */; };
+		7D7BB689266CED0F00EE1BBB /* aoc3-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB686266CED0E00EE1BBB /* aoc3-data.txt */; };
+		7D7BB68A266CED0F00EE1BBB /* aoc3-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB687266CED0E00EE1BBB /* aoc3-test.txt */; };
+		7D7BB68B266CED0F00EE1BBB /* aoc3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BB688266CED0E00EE1BBB /* aoc3.swift */; };
+		7D7BB691266CFC6700EE1BBB /* aoc4-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB68E266CFC6700EE1BBB /* aoc4-data.txt */; };
+		7D7BB692266CFC6700EE1BBB /* aoc4-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB68F266CFC6700EE1BBB /* aoc4-test.txt */; };
+		7D7BB696266CFCA000EE1BBB /* aoc4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BB695266CFCA000EE1BBB /* aoc4.swift */; };
+		7D7BB69B267050F300EE1BBB /* aoc5-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB698267050F300EE1BBB /* aoc5-data.txt */; };
+		7D7BB69C267050F300EE1BBB /* aoc5-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D7BB699267050F300EE1BBB /* aoc5-test.txt */; };
+		7D7BB69D267050F300EE1BBB /* aoc5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7BB69A267050F300EE1BBB /* aoc5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +40,23 @@
 		7D2F304C266BF7E400B4AF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D2F304E266BF7E400B4AF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D2F304F266BF7E400B4AF5D /* Algoriddm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Algoriddm.entitlements; sourceTree = "<group>"; };
+		7D2F305B266C14DB00B4AF5D /* aoc1-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc1-data.txt"; sourceTree = "<group>"; };
+		7D2F305C266C14DB00B4AF5D /* aoc1-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc1-test.txt"; sourceTree = "<group>"; };
+		7D2F305D266C14DB00B4AF5D /* aoc1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aoc1.swift; sourceTree = "<group>"; };
+		7D2F3062266C161F00B4AF5D /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		7D2F3068266C2A4E00B4AF5D /* PlaygroundOhPleaseWork.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = PlaygroundOhPleaseWork.playground; path = "../../../Library/Autosave Information/PlaygroundOhPleaseWork.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7D7BB67F266C4E5F00EE1BBB /* aoc2-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc2-data.txt"; sourceTree = "<group>"; };
+		7D7BB680266C4E5F00EE1BBB /* aoc2-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc2-test.txt"; sourceTree = "<group>"; };
+		7D7BB681266C4E5F00EE1BBB /* aoc2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aoc2.swift; sourceTree = "<group>"; };
+		7D7BB686266CED0E00EE1BBB /* aoc3-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc3-data.txt"; sourceTree = "<group>"; };
+		7D7BB687266CED0E00EE1BBB /* aoc3-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc3-test.txt"; sourceTree = "<group>"; };
+		7D7BB688266CED0E00EE1BBB /* aoc3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aoc3.swift; sourceTree = "<group>"; };
+		7D7BB68E266CFC6700EE1BBB /* aoc4-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc4-data.txt"; sourceTree = "<group>"; };
+		7D7BB68F266CFC6700EE1BBB /* aoc4-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc4-test.txt"; sourceTree = "<group>"; };
+		7D7BB695266CFCA000EE1BBB /* aoc4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aoc4.swift; sourceTree = "<group>"; };
+		7D7BB698267050F300EE1BBB /* aoc5-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc5-data.txt"; sourceTree = "<group>"; };
+		7D7BB699267050F300EE1BBB /* aoc5-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aoc5-test.txt"; sourceTree = "<group>"; };
+		7D7BB69A267050F300EE1BBB /* aoc5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aoc5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				7D2F3041266BF7E100B4AF5D /* Algoriddm */,
+				7D2F3068266C2A4E00B4AF5D /* PlaygroundOhPleaseWork.playground */,
 				7D2F3040266BF7E100B4AF5D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,8 +96,24 @@
 				7D2F3046266BF7E400B4AF5D /* Assets.xcassets */,
 				7D2F304B266BF7E400B4AF5D /* Main.storyboard */,
 				7D2F304E266BF7E400B4AF5D /* Info.plist */,
+				7D2F305B266C14DB00B4AF5D /* aoc1-data.txt */,
+				7D2F305C266C14DB00B4AF5D /* aoc1-test.txt */,
+				7D2F305D266C14DB00B4AF5D /* aoc1.swift */,
+				7D7BB67F266C4E5F00EE1BBB /* aoc2-data.txt */,
+				7D7BB680266C4E5F00EE1BBB /* aoc2-test.txt */,
+				7D7BB681266C4E5F00EE1BBB /* aoc2.swift */,
+				7D7BB686266CED0E00EE1BBB /* aoc3-data.txt */,
+				7D7BB687266CED0E00EE1BBB /* aoc3-test.txt */,
+				7D7BB688266CED0E00EE1BBB /* aoc3.swift */,
+				7D7BB68E266CFC6700EE1BBB /* aoc4-data.txt */,
+				7D7BB68F266CFC6700EE1BBB /* aoc4-test.txt */,
+				7D7BB695266CFCA000EE1BBB /* aoc4.swift */,
+				7D7BB698267050F300EE1BBB /* aoc5-data.txt */,
+				7D7BB699267050F300EE1BBB /* aoc5-test.txt */,
+				7D7BB69A267050F300EE1BBB /* aoc5.swift */,
 				7D2F304F266BF7E400B4AF5D /* Algoriddm.entitlements */,
 				7D2F3048266BF7E400B4AF5D /* Preview Content */,
+				7D2F3062266C161F00B4AF5D /* String+Extensions.swift */,
 			);
 			path = Algoriddm;
 			sourceTree = "<group>";
@@ -139,9 +189,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7BB689266CED0F00EE1BBB /* aoc3-data.txt in Resources */,
+				7D7BB692266CFC6700EE1BBB /* aoc4-test.txt in Resources */,
+				7D7BB69B267050F300EE1BBB /* aoc5-data.txt in Resources */,
 				7D2F304D266BF7E400B4AF5D /* Main.storyboard in Resources */,
+				7D7BB68A266CED0F00EE1BBB /* aoc3-test.txt in Resources */,
+				7D7BB691266CFC6700EE1BBB /* aoc4-data.txt in Resources */,
 				7D2F304A266BF7E400B4AF5D /* Preview Assets.xcassets in Resources */,
+				7D7BB683266C4E5F00EE1BBB /* aoc2-test.txt in Resources */,
+				7D7BB69C267050F300EE1BBB /* aoc5-test.txt in Resources */,
+				7D2F305F266C14DB00B4AF5D /* aoc1-test.txt in Resources */,
+				7D2F305E266C14DB00B4AF5D /* aoc1-data.txt in Resources */,
 				7D2F3047266BF7E400B4AF5D /* Assets.xcassets in Resources */,
+				7D7BB682266C4E5F00EE1BBB /* aoc2-data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2F3063266C161F00B4AF5D /* String+Extensions.swift in Sources */,
+				7D7BB684266C4E5F00EE1BBB /* aoc2.swift in Sources */,
 				7D2F3045266BF7E100B4AF5D /* ContentView.swift in Sources */,
 				7D2F3043266BF7E100B4AF5D /* AppDelegate.swift in Sources */,
+				7D7BB696266CFCA000EE1BBB /* aoc4.swift in Sources */,
+				7D7BB69D267050F300EE1BBB /* aoc5.swift in Sources */,
+				7D2F3060266C14DB00B4AF5D /* aoc1.swift in Sources */,
+				7D7BB68B266CED0F00EE1BBB /* aoc3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -62,5 +62,5 @@ func aoc5_1() {
 }
 
 func aoc5_2() {
-    let stuff = loadStuffs("aoc5-test.txt")     
+//    let stuff = loadStuffs("aoc5-test.txt")     
 }

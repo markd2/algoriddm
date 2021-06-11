@@ -61,32 +61,34 @@ partition(by:))
   - Reflexivity : a P a is true
   - Symmetry : a P b => b P a
   - transitivity : a P b and b P c => a P c
-  
+
+* Randoms
+  - [ ] @usableFromInline
+  - [ ] https://khanlou.com/2018/12/analyzing-complexity/
 
 * [ ] swift-alogirthms / https://github.com/apple/swift-algorithms
   - there exist compact Guides for different topics.
   - all the things
-    - [ ] combinations
-    - [ ] permutations
+    - [X] combinations
+    - [X] permutations
     - [ ] unique permutations
 
     - [ ] rotate
     - [ ] stablePartition
 
-    - [ ] chain
-    - [ ] cycled
+    - [X] chain
+    - [X] cycled
     - [ ] joined
-    - [ ] product (cartesian)
+    - [X] product (cartesian)
 
-    - [ ] compacted
-    - [ ] randomStableSample
+    - [X] compacted
+    - [X] randomStableSample
     - [ ] striding(by:)
-    - [ ] suffix(wile:)
-    - [ ] trimmingPrefix/Suffix/while
-    - [ ] uniqued (on:)
-    - [ ] minAndMax (by:)
-
-    - [ ] min/max(count:), (count:sortedBy:)  
+    - [ ] suffix(while:)
+    - [X] trimmingPrefix/Suffix/while
+    - [X] uniqued (on:)
+    - [X] minAndMax (by:)
+    - [X] min/max(count:), (count:sortedBy:)  
 
     - [ ] adjacentPairs
     - [ ] chunked by/on/ofCount
@@ -169,4 +171,121 @@ permutations, the `permutations` call would be more convenience assuming sacrifi
 debuggability is ok.
 
 For this thing, we don't need the lexicographic ordering.
+
+## Quick Tour
+
+### Combinations
+
+https://github.com/apple/swift-algorithms/blob/main/Guides/Combinations.md
+
+computes combinations of a collections elements
+
+```
+["hello", "greeble", "bork"]
+["hello", "greeble", "fnord"]
+["hello", "bork", "fnord"]
+["greeble", "bork", "fnord"]
+```
+
+vs permutation that has positional differences too
+
+```
+["hello", "greeble", "bork"]
+...
+["greeble", "hello", "bork"]
+...
+["bork", "hello", "greeble"]
+```
+
+Returns a `Combinations<T>` - "collection wrapper that genrates combinations of a base
+collection.  Adopts Sequence.  Extends combinations / lazy sequence protocol
+
+
+### Chain of Acheron
+
+Chain - 
+  - cats two (potentially differeing) collections with same element type
+  - one after another
+  - limited of two collections
+
+unlike joined
+  - permits different colleciton types
+  - performs no allocations (!)
+  - preserve the shared conformances of the two underlying types
+    - e.g. Collection / BiDi / RandomAccess
+
+
+### Cycles
+
+https://www.youtube.com/watch?v=-0Xa4bHcJu8
+
+iterate over a collection FOREVER (or a set number of times)
+
+```
+    for x in (1...3).cycled(times: 2) {
+        print(x)
+```
+
+
+### Product
+
+take two collections, pairs every element of both collections
+
+```
+    let oop = ["greeble", "hoover", "fnord", "tele"]
+    let ack = ["bork", "blah", "ook"]
+
+    for (blah, borf) in product(oop, ack) {
+```
+
+### Compacted
+
+convenience lazily flattens nils out of a sequence or collection
+
+```
+    let array: [String?] = ["hoover", nil, nil, "greeble", "fnord", nil, "oopack"]
+    let blah = array.compacted()
+```
+
+
+### Random Sampling
+
+(eagerly) Pick k elements randomly from a sequence/collection w/o replacement.
+Stable preserves relative ordering.
+
+"unstable implementation of randomSample explicitly shuffles the elements before returning them"
+
+Can use `collection.indices.randomSample` to get indezes.
+
+
+### Trimming
+
+trim on either (or both) sides with a given predicate.
+
+```
+    let splunge = "      Greebl, Bork  "
+    let nospace = splunge.trimming(while: \.isWhitespace)
+```
+
+
+### Unique
+
+strip repeated elements from sequence or collection.
+
+```
+func unique() {
+    let numbs = [1, 2, 3, 4, 1, 2, 5, 4, 2, 1, 5, 2, 1, 1, 2, 3, 1]
+    let unique = Array(numbs.uniqued())
+```
+
+
+### Min and Max
+
+Finds the smallest and/or largest elements of the collection (stable)
+
+Gives performance boost over sorting the collection, or calling min/max
+
+Also works with single-pass sequences.  Cool performance analysis.
+
+
 
